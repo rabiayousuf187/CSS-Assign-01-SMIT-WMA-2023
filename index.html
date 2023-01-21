@@ -8,8 +8,8 @@
     <link href="./css/style.css" rel="stylesheet"/>
 </head>
 <body>
-    <nav class="navbar background">
-        <ul class="nav-list">
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
             <div class="logo">
                 <img src="./img/laptop.jpg" alt="logo"/>
             </div>
@@ -18,9 +18,14 @@
             <li><a href="#servies">Servies</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="rightnav">
+        <div class="rightnav v-class-resp">
             <input type="text" name="search" id="search"/>
             <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="smart-nav">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
@@ -50,7 +55,9 @@
                 </p>
             </div>
             <div class="thumbnail">
-                <img src="./img/laptop1.jpg" alt="laptop"/>
+                <div class="inner-img">
+                    <img src="./img/laptop1.jpg" alt="laptop"/>
+                </div>
             </div>
         </section>
 
@@ -64,7 +71,9 @@
                 </p>
             </div>
             <div class="thumbnail">
-                <img src="./img/bigdata.jpg" alt="bigdata"/>
+                <div class="inner-img">
+                    <img src="./img/bigdata.jpg" alt="bigdata"/>
+                </div>
             </div>
         </section>
 
@@ -78,10 +87,83 @@
                 </p>
             </div>
             <div class="thumbnail">
-                <img src="./img/robot1.jpeg" alt="robot" style="    height: 160px;
+                <div class="inner-img">
+                    <img src="./img/robot1.jpeg" alt="robot" style="    height: 160px;
                 border-radius: 85px;
                 width: 160px;"/>
+                </div>
             </div>
         </section>
-</body>
+
+        <section class="contact">
+            <h1 class="text-center">Contact Us</h1>
+            <div class="form">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name"/>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email"/>
+                <textarea id="msg" name="msg" cols="20" roews="10" placeholder="Enter Your Query Here"></textarea>
+                <button type="submit" name="submit" id="submit" class="btn" style="background: darkred; margin: 9px;">Submit</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="foot-div">
+                <div class="foot-logo">
+                    <span style="display: inline-block; width: 138px; 
+                    margin-top: 12px;">
+                        <img src="./img/laptop1.jpg" width="50" height="50" align="left" style="border-radius: 40px;" alt="logo" title="logo">
+                        <p align="right" style="padding-top: 15px;    color: white;"><b>Future Tech</b></p>
+                    </span>
+                </div>
+                    <div class="foot-list">
+                        <h3>Projects</h3>
+                        <ul>
+                            <li><a href="#">Graphics Designer</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Graphics Designer</a></li>
+                            <li><a href="#">Video Editing</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Programming</a></li>
+                            <li><a href="#">Consultant</a></li>
+                            <li><a href="#">Travel Agent</a></li>
+                            <li><a href="#">Photography</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="foot-list">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Partnership</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Investor Relation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="foot-list">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help & Support</a></li>
+                            <li><a href="#">Trust & Safety</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="foot-list">
+                        <h3>Stay Connected</h3>
+                        <p>Join us with <b>+50,000</b> People and Enjoy your community</p>
+                        <form action="" method="">
+                            <input type="email" name="email" id="email" placeholder=" email"required/>
+                            <input type="date" name="date" id="date" hidden/>
+                            <input type="time" name="time" id="time" hidden/>
+                            <button type="submit" name="submit" id="submit" class="btn btn-light">Subscribe</button>
+                        </form>
+                    </div>
+                    <p class="" style="text-align: center;"> Copyright &copy; 2023 - Future Tech All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
 </html>

@@ -13,14 +13,16 @@
             <div class="logo">
                 <img src="./img/laptop.jpg" alt="logo"/>
             </div>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#servies">Servies</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="rightnav v-class-resp">
-            <input type="text" name="search" id="search"/>
-            <button class="btn btn-sm">Search</button>
+            <form action="" method=""> 
+                <input type="text" name="search" id="search"/>
+                <button class="btn btn-sm">Search</button>
+            </form>
         </div>
         <div class="smart-nav">
             <div class="line"></div>
@@ -35,9 +37,9 @@
                 <p class="text-big">The Future of Tech is here</p>
                 <p class="text-small">In this world of 7 Billion People we need to educate all of them. This is the future of an educated world and we are proud to say that the Future of Education is Here</p>
                 <div class="button">
-                    <button class="btn">Subscribe</button>
-                    <button class="btn">Watch Video</button>
-                </div>button
+                    <button class="btn" href="#">Subscribe</button>
+                    <button class="btn" href="#">Watch Video</button>
+                </div>
             </div>
             <div class="second-half">
                 <img src="./img/laptop.jpg" alt="future Image">
@@ -45,7 +47,7 @@
         </div>
     </section>
 
-        <section class="section sec-right">
+        <section id="servies" class="section sec-right">
             <div class="para">
                 <p class="text-big">
                     The end of your Search is Here
@@ -56,11 +58,13 @@
             </div>
             <div class="thumbnail">
                 <div class="inner-img">
-                    <img src="./img/laptop1.jpg" alt="laptop"/>
+                    <img src="./img/laptop.jpeg" alt="laptop" style="    height: 160px;
+                    border-radius: 85px;
+                    width: 160px;"/>
                 </div>
             </div>
         </section>
-
+        
         <section class="section left">
             <div class="para">
                 <p class="text-big">
@@ -95,20 +99,100 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="section left">
+            <div class="para">
+                <p class="text-big">
+                    Genomics
+                </p>
+                <p class="sec-subtag">
+                    Imagine a technology that can study your DNA and use it to improve your health, helping you fight diseases and whatnot! Genomics is precisely that technology that peruses upon the make-up of genes, DNAs, their mapping, structure, etc. Further, this can help quantify your genes and result in finding diseases or any possible problems that can later be a health issue. When it comes to a specialization like Genomics, one can find a variety of technical as well as non-technical roles. Technical jobs in this area are all about designing, analyzing, and diagnostics, while non-technical jobs are concerned with higher levels of research and theoretical analysis. Here are the top jobs in Genomics:
+                </p>
+                <ul>
+                    <li>Bioinformatics Analyst</li>
+                    <li>Genome Research Analyst</li>
+                    <li>Full Stack Developer</li>
+                    <li>Software Engineer</li>
+                    <li>Bioinformatician</li>
+                    <li>Genetics Engineer</li>
+                </ul>
+            </div>
+            <div class="thumbnail">
+                <div class="inner-img">
+                    <img src="./img/genomics.jpg" alt="genomics" style="    height: 160px;
+                    border-radius: 85px;
+                    width: 160px;"/>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="section sec-right">
+            <div class="para">
+                <p class="text-big">
+                    Quantum Computing
+                </p>
+                <p class="sec-subtag">
+                    Next remarkable technology trend is quantum computing, which is a form of computing that takes advantage of quantum phenomena like superposition and quantum entanglement. This amazing technology trend is also involved in preventing the spread of the coronavirus, and to develop potential vaccines, thanks to its ability to easily query, monitor, analyze and act on data, regardless of the source. Another field where quantum computing is finding applications is banking and finance, to manage credit risk, for high-frequency trading and fraud detection.
+                </p>
+                <p>
+                    Quantum computers are now a multitude times faster than regular computers and huge brands like Splunk, Honeywell, Microsoft, AWS, Google and many others are now involved in making innovations in the field of Quantum Computing. The revenues for the global quantum computing market are projected to surpass $2.5 billion by 2029. And to make a mark in this new trending technology, you need to have experience with quantum mechanics, linear algebra, probability, information theory, and machine learning.
+                </p>
+            </div>
+            <div class="thumbnail">
+                <div class="inner-img">
+                    <img src="./img/Quantum-computer.jpg" alt="Quantum-computer" style="    height: 160px;
+                border-radius: 85px;
+                width: 160px;"/>
+                </div>
+            </div>
+        </section>
+
+        <section id= "about" class="contact-detail">
+            <div class="container"> 
+                <table width="80%">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>
+                                Email:
+                            </h3>
+                            <a href="mailto:hello@example.com">Rayoptics@example.com</a></td>
+                        <td><h3>
+                            Phone:
+                        </h3><a href="tel:+7-800-999-800">+7-800-999-800</a></td>
+                        <td>
+                            <h3>
+                            Address:
+                        </h3><address>76 West Rock, Maple Building,
+                            London
+                        </address></td>
+                    </tr>
+                </table>
+                          
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
             <h1 class="text-center">Contact Us</h1>
+            <div class="map overlay">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.6564157301127!2d-79.02381538462697!3d43.842221579115225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4dfd9ff9e7839%3A0x220dfa311cd630eb!2sFuture-Tech%20Canada!5e0!3m2!1sen!2s!4v1674323490599!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
             <div class="form">
-                <input type="text" name="name" id="name" placeholder="Enter Your Name"/>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email"/>
-                <textarea id="msg" name="msg" cols="20" roews="10" placeholder="Enter Your Query Here"></textarea>
-                <button type="submit" name="submit" id="submit" class="btn" style="background: darkred; margin: 9px;">Submit</button>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name"/>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email"/>
+                    <textarea id="msg" name="msg" cols="20" roews="10" placeholder="Enter Your Query Here"></textarea>
+                    <button type="submit" name="submit" id="submit" class="btn">Submit</button>
+                </form>
+                
             </div>
         </section>
 
         <footer>
             <div class="foot-div">
                 <div class="foot-logo">
-                    <span style="display: inline-block; width: 138px; 
+                    <span style="display: inline-block; width: 0px; 
                     margin-top: 12px;">
                         <img src="./img/laptop1.jpg" width="50" height="50" align="left" style="border-radius: 40px;" alt="logo" title="logo">
                         <p align="right" style="padding-top: 15px;    color: white;"><b>Future Tech</b></p>

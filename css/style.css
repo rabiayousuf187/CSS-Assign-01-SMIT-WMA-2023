@@ -6,6 +6,10 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+body{
+    background-color: lightgray;
 }
 .logo{
     width: 20%;
@@ -68,6 +72,8 @@
 }
 .first-section{
     height: 100vh;
+    border-bottom: 120px solid darkred;
+    border-bottom-right-radius: 100% 22%;
 }
 .box-main{
     display: flex;
@@ -115,13 +121,26 @@
 }
 .btn{
     padding: 10px 26px;
-    margin: 7px 3px;
+    margin: 15px 3px;
     border: 1px solid;
     border-radius: 4px;
     /* font-size: 14px; */
     background: none;
     color: white;
     cursor: pointer;
+}
+.box-main .btn:hover,
+.box-main .btn:focus,
+.box-main .btn:active,
+.foot-list button:hover,
+.foot-list button:focus,
+.foot-list button:active,
+.btn-sm:hover,
+.btn-sm:active, 
+.btn-sm:focus{
+    background: #840900;
+    color: white;
+    border: 1px solid darkred;
 }
 .btn-sm{
     padding: 5px 10px;
@@ -134,17 +153,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    max-width: 60%;
     margin: auto;
     min-height: 100px;
     padding-top: 60px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid darkred;
+    border-bottom-left-radius: 10% 4%;
+    border-bottom-right-radius: 0px;
+
+}
+.section:hover{
+    box-shadow: -8px 17px 5px grey;
 }
 .left{
     flex-direction: row-reverse;
+    /* border: none; */
+    /* border-bottom: 2px solid darkred; */
+    border-bottom-right-radius: 10% 4%;
+    border-bottom-left-radius: 0px;
+}
+.section.left:hover{
+    box-shadow: 8px 17px 5px grey;
 }
 .para {
     padding: 0px 45px;
     text-align: justify;
+}
+.para ul li{
+        list-style-type: none;
+        list-style-position: inside;
+}
+.para ul li::before {
+    content: "■";
+    color: #8c0808;
+    margin-right: 15px;
 }
 .section .text-big{
     text-align: justify;
@@ -183,32 +226,86 @@
     border-radius: 50%;
 }
 
+.contact-detail {
+    width: 100%;
+    height: 290px;
+    /* padding-left: 185px; */
+    padding-top: 24px;
+    margin-bottom: 0px;
+    background: linear-gradient(0,#000000,#570202ed),url(https://png.pngtree.com/background/20210710/original/pngtree-green-nature-small-fresh-poster-banner-background-picture-image_1016363.jpg);
+    background-position: center;
+    background-repeat: repeat;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+table , table a {
+    width:80%;
+    color: white;
+    margin-top: 92px;
+    font-size: 16px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
+}
+.contact-detail table td{
+    padding: 2% 2%;
+    width:20%;
+}
+
 .contact{
     height: 100vh;
     background-color: #dcdcdc3b;
     padding-bottom: 170px;
     margin-top: 80px;
+    border-top:2px solid rgba(55, 49, 49, 0.078);
+    /* position: absolute; */
 }
 .text-center{
     text-align: center;
     padding: 50px;
     font-size: 35px;
     font-family: 'Nanum Gothic', sans-serif;
+    color: darkred;
+}
+.map iframe{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
 }
 .form{
     max-width: 30%;
     margin: 30px auto;
+    position: absolute;
+    left: 40%;
+    margin-top: 116px;
 }
-
+.overlay{
+    filter: grayscale(100%);  
+}
 .form input, textarea#msg{
     width: 90%;
     padding: 9px;
     font-size: 18px;
-    border: 2px solid #9d8a8a29;
+    border: 2px  solid #23262a9e;
     margin: 12px 10px;
     border-radius: 4px;
 }
-
+.contact #submit{
+    background: darkred;
+    margin: 9px;;
+}
+.contact #submit:hover{
+    background:#340303;
+}
+.form input:focus,
+textarea:focus, #search:focus{
+    background: #840900;
+    color: white;
+}
+input #submit:active, input #submit:focus{
+    background: #694d4d;
+}
 textarea#msg{
     height: 140px;;
 }
@@ -227,6 +324,8 @@ footer {
     justify-content: center;
     border-top: 4px solid darkred;
     padding: 40px 0px;
+    border-top: 120px solid darkred;
+    border-top-left-radius: 100% 22%;
 }
 .foot-div{
     width: 80%;
@@ -235,7 +334,20 @@ footer {
 .foot-logo {
     text-align: left;
     padding-top: 5px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid red;
+    
+}
+.foot-logo span p{ 
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+.foot-logo img {
     /* padding-bottom: 27px; */
+    border: 2px double #8c0808;
+    border-width: thick;
+    border-radius: 50%;
+    padding: 5px;
 }
 .foot-logo:hover{
     border-bottom: 3px solid silver;
@@ -358,6 +470,9 @@ footer {
         max-width: 50%;
     }
     .para {
-        padding: 0px; */
+        padding: 0px; 
+    }
+    .form{
+        left: 30%;
     }
 }
